@@ -4,7 +4,7 @@ public class Autor {
     private String nomeCompleto;
     private String biografiaAutor;
     private int anoNascimento;
-    private Livro objLivro;
+    private Livro[] objLivro;
 
     public Autor(){
 
@@ -20,9 +20,13 @@ public class Autor {
         System.out.println(this.biografiaAutor);
         System.out.println(this.anoNascimento);
 
-        if(objLivro != null){
-            System.out.println(this.objLivro.getNomeLivro());
+        if(objLivro == null){
+            return;
         }
+        for (Livro livro : objLivro) {
+            System.out.println(livro.getNomeLivro());
+        }
+
 
     }
 
@@ -50,11 +54,11 @@ public class Autor {
         this.anoNascimento = anoNascimento;
     }
 
-    public Livro getObjLivro() {
+    public Livro[] getObjLivro() {
         return objLivro;
     }
 
-    public void setObjLivro(Livro objLivro) {
+    public void setObjLivro(Livro[] objLivro) {
         this.objLivro = objLivro;
     }
 }
