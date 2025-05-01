@@ -14,6 +14,12 @@ public class Autor {
         this.biografiaAutor = biografiaAutor;
         this.anoNascimento = anoNascimento;
     }
+    public Autor(String nomeCompleto, String biografiaAutor, int anoNascimento, Livro[] objLivro ){
+        this.nomeCompleto = nomeCompleto;
+        this.biografiaAutor = biografiaAutor;
+        this.anoNascimento = anoNascimento;
+        this.objLivro = objLivro;
+    }
 
     public void imprime(){
         System.out.println(this.nomeCompleto);
