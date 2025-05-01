@@ -15,6 +15,35 @@ public class Autor {
         this.anoNascimento = anoNascimento;
     }
 
+    public void setNomeCompleto(String nomeCompleto){
+        this.nomeCompleto = nomeCompleto;
+    }
 
+    public String getNomeCompleto(){
+        return nomeCompleto;
+    }
 
+    public String getBiografiaAutor() {
+        return biografiaAutor;
+    }
+
+    public void setBiografiaAutor(String biografiaAutor) {
+        this.biografiaAutor = biografiaAutor;
+    }
+
+    public int getAnoNascimento() {
+        return anoNascimento;
+    }
+
+    public void setAnoNascimento(int anoNascimento) {
+        this.anoNascimento = anoNascimento;
+    }
+
+    public Livro getObjLivro() {
+        return objLivro;
+    }
+
+    public void setObjLivro(Livro objLivro) {
+        this.objLivro = objLivro;
+    }
 }
