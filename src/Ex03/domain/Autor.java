@@ -19,7 +19,11 @@ public class Autor {
         System.out.println(this.nomeCompleto);
         System.out.println(this.biografiaAutor);
         System.out.println(this.anoNascimento);
-        System.out.println(this.objLivro.getNomeLivro());
+
+        if(objLivro != null){
+            System.out.println(this.objLivro.getNomeLivro());
+        }
+
     }
 
     public void setNomeCompleto(String nomeCompleto){
