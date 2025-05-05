@@ -21,15 +21,26 @@ public abstract class Animal {
         this.velocidadeMedia = velocidadeMedia;
     }
 
-    public void imprime(){
-        System.out.println("A Cor do animal eh: " + this.cor);
-        System.out.println("O Nome do animal eh: " + this.nome);
-        System.out.println("O Comprimento do animal eh: " + this.comprimento);
-        System.out.println("O Numero de patas do animal eh: " + this.numeroPatas);
-        System.out.println("O ambiente em que o animal vive eh: " + this.ambiente);
-        System.out.println("A velocidade média do animal eh: " + this.velocidadeMedia);
-
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nome='" + nome + '\'' +
+                ", comprimento=" + comprimento +
+                ", numeroPatas=" + numeroPatas +
+                ", cor='" + cor + '\'' +
+                ", ambiente='" + ambiente + '\'' +
+                ", velocidadeMedia=" + velocidadeMedia +
+                '}';
     }
+
+    //    public void imprime(){
+//        System.out.println("A Cor do animal eh: " + this.cor);
+//        System.out.println("O Nome do animal eh: " + this.nome);
+//        System.out.println("O Comprimento do animal eh: " + this.comprimento);
+//        System.out.println("O Numero de patas do animal eh: " + this.numeroPatas);
+//        System.out.println("O ambiente em que o animal vive eh: " + this.ambiente);
+//        System.out.println("A velocidade média do animal eh: " + this.velocidadeMedia);
+//    }
 
     public String getNome() {
         return nome;
