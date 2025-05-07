@@ -39,7 +39,7 @@ public abstract class Animal {
         System.out.println("O Comprimento do animal eh: " + this.comprimento);
         System.out.println("O Numero de patas do animal eh: " + this.numeroPatas);
         System.out.println("O ambiente em que o animal vive eh: " + this.ambiente);
-        System.out.println("A velocidade média do animal eh: " + this.velocidadeMedia);
+        System.out.println("A velocidade média do animal eh: " + this.velocidadeMedia + " m/s");
     }
 
     public String getNome() {
